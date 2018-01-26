@@ -96,7 +96,27 @@ Found 9 items
 -rw-r--r--   3 driscoll driscoll  819200000 2018-01-26 04:17 /user/driscoll/tgen/part-m-00006
 -rw-r--r--   3 driscoll driscoll  819200000 2018-01-26 04:17 /user/driscoll/tgen/part-m-00007
 
+This command does not work:
+[driscoll@ip-172-31-30-151 ~]$ hadoop fsck -blocks /user/driscoll/tgen/part*
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
 
+Connecting to namenode via http://ip-172-31-23-7.us-west-2.compute.internal:50070
+FSCK started by driscoll (auth:SIMPLE) from /172.31.30.151 for path /user/driscoll/tgen/part* at Fri Jan 26 04:23:22 EST 2018
+
+
+Path '/user/driscoll/tgen/part*' does not exist
+
+This command does not work:
+[driscoll@ip-172-31-30-151 ~]$ hdfs fsck -blocks /user/driscoll/tgen/part*
+Connecting to namenode via http://ip-172-31-23-7.us-west-2.compute.internal:50070
+FSCK started by driscoll (auth:SIMPLE) from /172.31.30.151 for path /user/driscoll/tgen/part* at Fri Jan 26 04:24:19 EST 2018
+
+
+Path '/user/driscoll/tgen/part*' does not exist
+
+
+This command works:
 [driscoll@ip-172-31-30-151 ~]$ hdfs fsck -blocks /user/driscoll/tgen/
 Connecting to namenode via http://ip-172-31-23-7.us-west-2.compute.internal:50070
 FSCK started by driscoll (auth:SIMPLE) from /172.31.30.151 for path /user/driscoll/tgen/ at Fri Jan 26 04:22:22 EST 2018
