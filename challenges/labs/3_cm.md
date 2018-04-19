@@ -1,4 +1,4 @@
-
+```
 [root@ip-172-31-30-151 ec2-user]# hdfs dfs -ls /user
 Found 8 items
 drwxr-xr-x   - admin    admin               0 2018-01-26 04:08 /user/admin
@@ -9,9 +9,9 @@ drwxrwxrwx   - mapred   hadoop              0 2018-01-26 04:05 /user/history
 drwxrwxr-t   - hive     hive                0 2018-01-26 04:05 /user/hive
 drwxrwxr-x   - hue      hue                 0 2018-01-26 04:06 /user/hue
 drwxrwxr-x   - oozie    oozie               0 2018-01-26 04:06 /user/oozie
+```
 
-
-
+```
 [root@ip-172-31-30-151 ec2-user]# curl -u admin:admin 'http://52.36.243.234:7180/api/v8/hosts'
 {
   "items" : [ {
@@ -1968,3 +1968,4 @@ drwxrwxr-x   - oozie    oozie               0 2018-01-26 04:06 /user/oozie
   "hostTemplates" : {
     "items" : [ ]
   }
+```
